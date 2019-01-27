@@ -10,15 +10,16 @@ y la APP. Utiliza autorización mediante tokens (**JWT**). Aplicacion con arquit
 
 Necesitaremos tener instalados **Node.js**, **NPM** y **MongoDB**, podemos obtenerlos 
 desde la página web si estamos usando Windows, y si estámos usando Ubuntu 
-tenemos diferentes comandos para instalarlos. Todo el funcionamiento se ha comprobados mediente el programa **POSTMAN** que podemos obtener desde su página:
+tenemos diferentes comandos para instalarlos. Todo el funcionamiento se ha comprobado mediante el programa **POSTMAN** que podemos obtener desde su página:
 [https://www.getpostman.com/downloads/](https://www.getpostman.com/downloads/) 
 
 ### Windows
 ```
 ## Desde esta página instalamos NodeJS y npm conjutamente
-'https://www.npmjs.com/get-npm'
+https://www.npmjs.com/get-npm 
+
 ## Desde esta página podemos instalar MongoDB
-'https://www.mongodb.com/download-center/community'
+https://www.mongodb.com/download-center/community
 ```
 
 Despues de instalarlos deberemos ejecutar el comando "mongod" en una terminal CMD para poner al servicio el servidor mongo. En una nueva terminal abierta en la carpeta del proyecto ejecutaremos "npm start", con esto ya tendremos nuestro servidor listo para peticiones.
