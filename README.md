@@ -70,6 +70,30 @@ email: {type: String, unique: true, lowercase: true},
 displayName: String,
 password: {type: String},
 ```
+## Arbol de directorios
+
+Aquí podemos observar de una forma mas gráfica como se presenta la API
+```
+API-Rest
+│   app.js
+│   config.js
+│   index.js
+│   package-lock.json
+│   package.json
+│   README.md
+├───controller
+│       product.js
+│       user.js
+├───middlewares
+│       auth.js
+├───models
+│       product.js
+│       user.js
+├───routes
+│       index.js
+└───services
+        index.js
+```
 ## Autor
 
 Luis David López Uceda [luisdalopez56@gmail.com]() https://github.com/luisdalopez56 
