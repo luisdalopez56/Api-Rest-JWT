@@ -2,6 +2,8 @@
 
 ## Descripción
 
+![](https://img.shields.io/github/license/luisdalopez56/Api-Rest-JWT.svg)
+
 Este proyecto se basa en un servicio **REST** sobre una base de datos **MongoDB**. 
 Se utiliza **mongoose**, **express** para compartir los datos entre la base de datos
 y la APP. Utiliza autorización mediante tokens (**JWT**). Aplicacion con arquitectura **MVC**.
