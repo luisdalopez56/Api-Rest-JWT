@@ -20,8 +20,8 @@ function signUp(req, res){
     })
 }
 
-function signIn (req, res){
-    const signIn = (req, res) => {
+
+  const signIn = (req, res) => {
         User.findOne({ email: req.body.email }, (err, user) => {
           if (err) return res.status(500).send({ msg: `Error al ingresar: ${err}` })
           if (!user) return res.status(404).send({ msg: `no existe el usuario: ${req.body.email}` })
@@ -34,10 +34,9 @@ function signIn (req, res){
             return res.status(200).send({ msg: 'Te has logueado correctamente', token: service.createToken(user) })
           });
       
-        }).select('_id email +password');
-      }
+        }).select('_id email + password');
+   }
       
-}
 
 module.exports = {
     
