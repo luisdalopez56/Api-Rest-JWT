@@ -36,12 +36,22 @@ function signUp(req, res){
       
         }).select('_id email + password');
    }
+
+   const getUsers = (req, res) => {
+    User.find({},(err, users) => {
+        if (err) return res.status(500).send({message: `Error al realizar la peticion: ${err}`})
+        if(!users) return res.status(404).send({message: `No existen usuarios`})
+
+        res.send(200, {users})
+    })
+   }
       
 
 module.exports = {
     
     signUp,
-    signIn
+    signIn,
+    getUsers
 
 
 }

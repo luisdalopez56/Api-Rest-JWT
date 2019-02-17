@@ -24,7 +24,8 @@ https://www.npmjs.com/get-npm
 https://www.mongodb.com/download-center/community
 ```
 
-Despues de instalarlos deberemos ejecutar el comando "mongod" en una terminal CMD para poner al servicio el servidor mongo. En una nueva terminal abierta en la carpeta del proyecto ejecutaremos "npm start", con esto ya tendremos nuestro servidor listo para peticiones.
+Despues de instalarlos deberemos ejecutar el comando **"mongod"** en una terminal CMD para poner al servicio el servidor mongo. En una nueva terminal abierta en la carpeta del proyecto ejecutaremos **"npm i"** para instalar los modulos que le falta al proyecto para funcionar, luego deberemos ejecutar tras la instalación **"npm start"** y con esto ya tendremos nuestro servidor listo para recibir peticiones.
+
 
 ### Ubuntu
 
@@ -34,7 +35,7 @@ $ sudo apt-get install nodejs
 $ sudo apt-get install npm
 $ sudo apt install -y mongodb
 ```
-Despues de instalarlos deberemos ejecutar el comando "mongod" en una terminal Ubuntu para poner al servicio el servidor mongo. En una nueva terminal abierta en la carpeta del proyecto ejecutaremos "npm start", con esto ya tendremos nuestro servidor listo para peticiones.
+Despues de instalarlos deberemos ejecutar el comando "mongod" en una terminal Ubuntu para poner al servicio el servidor mongo. En una nueva terminal abierta en la carpeta del proyecto ejecutaremos **"npm i"** para instalar los modulos que le falta al proyecto para funcionar, luego deberemos ejecutar tras la instalación **"npm start"** y con esto ya tendremos nuestro servidor listo para recibir peticiones.
 
 ## Rutas del servidor
 
@@ -45,9 +46,9 @@ Todo ejecutado desde la ruta base localhost: 'http://localhost:3001/api/....'
 ```
 GET    '/product'            --> Obtenemos JSON de productos insertados en la base de datos.
 GET    '/product/:productId' --> Obtenemos un JSON del producto con la ID introducida.
-POST   '/product'            --> Hacemos un POST de un producto a crear, con los datos en la cabecera.
-PUT    '/product/:productId' --> Hacemos un POST con el ID del producto a modificar con los nuevos datos que vamos a modificar en la cabecera.
-DELETE '/product/:productId' --> Hacemos un DELETE del producto con la ID que se introduce.
+POST   '/product'            --> Hacemos un POST de un producto a crear, con los datos en la cabecera. (SE NECESITA TOKEN DE AUTENTIFICACIÓN)
+PUT    '/product/:productId' --> Hacemos un POST con el ID del producto a modificar con los nuevos datos que vamos a modificar en la cabecera. (SE NECESITA TOKEN DE AUTENTIFICACIÓN)
+DELETE '/product/:productId' --> Hacemos un DELETE del producto con la ID que se introduce. (SE NECESITA TOKEN DE AUTENTIFICACIÓN)
 POST   '/signup'             --> Hacemos un POST para añadir un nuevo usuario para autenticar en la base de datos de Mongo, esto devuelve un token.
 POST   '/signin'             --> Hacemos un POST para logearnos, con los datos en la cabecera.
 GET    '/private'            --> Hacemos un GET, se debe envíar el token del usuario creado, para de esta forma si está registrado obtener el resultado correcto.
